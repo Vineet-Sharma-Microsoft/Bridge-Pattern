@@ -1,7 +1,15 @@
 ## Introduction
 
-This is a simple pipeline example for a .NET Core application, showing just
-how easy it is to get up and running with .NET development using GitLab.
+The Bridge design pattern is a structural design pattern used to separate an object's abstraction from its implementation so that both can vary independently. In the context of a fruit application in .NET 7 (Core), I'll provide a simplified example of how you can implement the Bridge pattern.
+
+Let's create an example where we have different types of fruits (abstraction) and different ways to eat them (implementation). The Bridge pattern will help us separate the fruit types from the eating methods.
+
+1. An `Fruit` abstract class representing the abstraction.
+2. An `IEatingMethod` interface representing the implementation.
+3. Two concrete implementations of `IEatingMethod: BiteEating` and `CutEating`.
+4. Two concrete fruits (Apple and Banana) that inherit from the `Fruit` class. Each fruit has a specific eating method injected during instantiation.
+
+This way, you can easily add new fruit types or eating methods without changing existing code, which is the core concept of the Bridge pattern.
 
 # Reference links
 
